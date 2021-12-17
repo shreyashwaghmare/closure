@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            height: 100vh;
+            width: 100%;
+            justify-content: center;
+        }
+        input {
+            display: block;
+            margin: 1%;
+        }
+    </style>
+</head>
+<body>
+    <form>
+    <div id = "main">
+        <input id="one" type="number" placeholder="enter first number">
+        <input id="two" type="number" placeholder="enter second number">
+        <input  id="three" type="number" placeholder="enter third number">
+        <input type = "button" value="Multiply" onclick="multiply()">
+        <p id ="para"></p>
+
+    </div>
+</form>
+<script>
+                    let num1=  document.getElementById("one");
+                    let num2=  document.getElementById("two");
+                    let num3=  document.getElementById("three");
+     function multiply() {
+       let mul;
+       let va = num1.value;
+       let vaa = num2.value;
+       let vaaa = num3.value;
+      
+    //    console.log(va);
+    //    console.log(vaa);
+    //    console.log(vaaa);
+
+
+                function first(){
+                       
+                        function second(){
+                           
+
+
+                            function third(){
+
+                               
+                                console.log(mul);
+                                let parag = document.getElementById("para");
+                                parag.innerHTML= "Multiplicaion is :-"+" " + va*vaa*vaaa;
+                            }
+                            return third();
+                        }
+
+                        return second();
+                }
+
+                return first();
+         
+     }
+     
+</script>
+</body>
+</html>
